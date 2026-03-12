@@ -64,7 +64,7 @@ img {
   width: min(1200px, 100%);
   margin: 0 auto;
   padding: 40px 16px 60px;
-  scroll-margin-top: 50px;
+  scroll-margin-top: 100px;
 }
 
 .hero {
@@ -481,4 +481,5 @@ audio {
   }
 
 }
+
 
