@@ -1,5 +1,5 @@
-const birthDate = new Date("2005-03-12T00:00:00");
-const twentyFirstBirthday = new Date("2026-03-12T00:00:00");
+const birthDate = new Date("2005-04-12T00:00:00");
+const twentyFirstBirthday = new Date("2026-04-12T00:00:00");
 
 const cdDays = document.getElementById("cd-days");
 const cdHours = document.getElementById("cd-hours");
@@ -319,3 +319,4 @@ loveLetterModal.addEventListener("click", (e) => {
   }
 
 });
+
