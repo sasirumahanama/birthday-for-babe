@@ -104,6 +104,7 @@ h3 {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: clamp(1.2rem, 3.5vw, 1.7rem);
+  text-align: center;
 }
 
 .hero-text,
@@ -178,6 +179,13 @@ h3 {
   color: #82255f;
 }
 
+.card h3{
+  text-align: center;
+}
+
+.card .small-text{
+  text-align: center;
+}
 .btn-secondary {
   background: rgba(255, 255, 255, 0.14);
   color: white;
@@ -473,3 +481,4 @@ audio {
   }
 
 }
+
