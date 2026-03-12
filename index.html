@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOR MY LOVE ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <header class="topbar">
+    <div class="logo">💖 Birthday For My Love</div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#music">Music</a>
+      <a href="#game">Puzzle</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="badge">
+        A special surprise made with love
+      </div>
+
+      <h1>For Menuri Karunatilake ❤️</h1>
+
+      <p class="hero-text">
+        Some people come into our lives and quietly make everything feel warmer, brighter, and more beautiful.
+        You are that person for me, Manika 🥺❤️.
+        This little website is just a small way to celebrate you and the happiness you bring into my life every day.
+        Every second that passes brings us closer to your 21st birthday, and when that beautiful moment arrives,
+        a special surprise made with love will appear just for you. ❤️
+      </p>
+
+      <div id="birthdaySurprise" class="birthday-surprise hidden">
+        <h2>🎉 Happy 21st Birthday 🎂</h2>
+        <p>
+          Happy birthday, my love. You make my world softer, brighter, and more beautiful every day. ❤️
+        </p>
+        <div class="button-row">
+          <button id="heartBurstBtn" class="btn btn-primary">Tap for Heart Explosion 💕</button>
+          <button id="loveLetterBtn" class="btn btn-secondary">Open Love Letter 💌</button>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Countdown To 21st Birthday 🎂</h3>
+          <p class="small-text">Counting every second until her special moment.</p>
+
+          <div class="count-grid four-grid">
+            <div class="count-box">
+              <span id="cd-days">0</span>
+              <small>Days</small>
+            </div>
+            <div class="count-box">
+              <span id="cd-hours">0</span>
+              <small>Hours</small>
+            </div>
+            <div class="count-box">
+              <span id="cd-minutes">0</span>
+              <small>Minutes</small>
+            </div>
+            <div class="count-box">
+              <span id="cd-seconds">0</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Live Age Counter ⏳</h3>
+          <p class="small-text">Her exact age updates every second.</p>
+
+          <div class="count-grid six-grid">
+            <div class="count-box">
+              <span id="age-years">0</span>
+              <small>Years</small>
+            </div>
+            <div class="count-box">
+              <span id="age-months">0</span>
+              <small>Months</small>
+            </div>
+            <div class="count-box">
+              <span id="age-days">0</span>
+              <small>Days</small>
+            </div>
+            <div class="count-box">
+              <span id="age-hours">0</span>
+              <small>Hours</small>
+            </div>
+            <div class="count-box">
+              <span id="age-minutes">0</span>
+              <small>Minutes</small>
+            </div>
+            <div class="count-box">
+              <span id="age-seconds">0</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Photo Memories 📸</h2>
+      <p class="section-text">Our favorite memories together.</p>
+
+      <div class="button-row">
+        <button id="gridViewBtn" class="btn btn-primary">Grid View</button>
+        <button id="slideViewBtn" class="btn btn-secondary">Slideshow</button>
+      </div>
+
+      <div id="galleryGrid" class="gallery-grid">
+        <img src="1.jpeg" alt="Memory 1" />
+        <img src="2.jpeg" alt="Memory 2" />
+        <img src="3.jpeg" alt="Memory 3" />
+        <img src="4.jpeg" alt="Memory 4" />
+        <img src="5.jpeg" alt="Memory 5" />
+        <img src="6.jpeg" alt="Memory 6" />
+        <img src="7.jpeg" alt="Memory 7" />
+        <img src="8.jpeg" alt="Memory 8" />
+      </div>
+
+      <div id="slideshow" class="slideshow hidden">
+        <button id="prevSlide" class="slide-btn">❮</button>
+        <img id="slideImage" src="1.jpeg" alt="Slideshow image" />
+        <button id="nextSlide" class="slide-btn">❯</button>
+      </div>
+    </section>
+
+    <section id="music" class="section">
+      <h2>Our Song 🎶</h2>
+      <p class="section-text">The one song that reminds me of you.</p>
+
+      <div class="music-card">
+        <h3>Play Our Song ❤️</h3>
+        <audio controls>
+          <source src="Sanda Renu Athi Raaka.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <section id="game" class="section">
+      <h2>Photo Puzzle 🧩</h2>
+      <p class="section-text">
+        Arrange the 3×3 photo pieces correctly to complete the picture.
+      </p>
+
+      <div class="puzzle-card">
+        <div class="button-row">
+          <button id="shuffleBtn" class="btn btn-primary">Shuffle Puzzle</button>
+          <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <p class="small-text">Tap one piece, then tap another piece to swap them.</p>
+
+        <div id="puzzle" class="puzzle-board"></div>
+
+        <div id="puzzleMessage" class="message-box">
+          Complete the photo puzzle to unlock the sweet message ❤️
+        </div>
+
+        <div id="finalMessage" class="final-message hidden">
+          <p>
+            You solved the puzzle ❤️
+          </p>
+          <p>
+            Just like these pieces came together to form one beautiful picture,
+            every moment with you completes my life in the most special way.
+          </p>
+          <p>
+            Happy early 21st birthday, Manika.
+            You are my happiness, my peace, and the most beautiful part of my life. 💖
+          </p>
+          <span class="signature">Made with love by your future life partner ❤️</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="loveLetterModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn">✕</button>
+      <h3>My Love Letter 💌</h3>
+      <p>
+        My dearest Menuri,<br /><br />
+        You are one of the most beautiful things that ever happened in my life.
+        Your smile, your voice, your care, and your love make my world feel complete.
+        This small surprise was made only for you, with all my love.
+        Happy birthday, my Manika. ❤️
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
