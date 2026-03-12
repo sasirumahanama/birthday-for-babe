@@ -71,6 +71,11 @@ img {
   padding-top: 44px;
 }
 
+.hero-title{
+  text-align: center;
+  line-height: 1.2;
+}
+
 .badge {
   width: fit-content;
   max-width: 100%;
@@ -466,4 +471,5 @@ audio {
     width: 42px;
     height: 42px;
   }
+
 }
