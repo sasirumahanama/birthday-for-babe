@@ -84,11 +84,10 @@ header,
 
 .menu-toggle{
   position:absolute;
-  right:18px;
-  top: 18px;
-  
-  width:30px;
-  height:18px;
+  right:16px;
+
+  width:34px;
+  height:28px;
 
   display:flex;
   flex-direction:column;
@@ -101,11 +100,11 @@ header,
 
 .menu-toggle span{
   display:block;
-  height:26px;
-  width:2px;
+  height:3px;
+  width:100%;
 
-  background: #ffffff;
-  border-radius:2px;
+  background:white;
+  border-radius:4px;
 }
 
 /* Navigation */
