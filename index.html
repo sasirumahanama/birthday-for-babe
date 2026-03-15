@@ -3,112 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FOR MY LOVE ❤️</title>
+  <meta name="description" content="A private couple website for Sasiru and Menuri." />
+  <meta name="theme-color" content="#4c1d4d" />
+  <title>Sasiru ❤️ Menuri</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="floating-hearts" id="floatingHearts"></div>
 
   <header class="topbar">
-    <div class="logo">Happy Birthday Manika 😘❤️</div>
+    <div class="logo">Sasiru ❤️ Menuri</div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="#home">Home</a>
+      <a href="#birthday">Birthday Wish</a>
+      <a href="#archive">Birthday Archive</a>
       <a href="#gallery">Gallery</a>
-      <a href="#music">Music</a>
-      <a href="#game">Puzzle</a>
+      <a href="#music">Song</a>
+      <a href="#game">Game</a>
+      <a href="#love-actions">Love Actions</a>
+      <a href="#history">History</a>
     </nav>
   </header>
 
   <main>
     <section id="home" class="section hero">
-      <div class="badge">
-        A special surprise made with love
-      </div>
+      <div class="badge">Our little love world ❤️</div>
 
-      <h1>For My Forever Love <br> Menuri Karunatilake ❤️</h1>
+      <h1>Sasiru ❤️ Menuri</h1>
 
       <p class="hero-text">
-        Some people come into our lives and quietly make everything feel warmer, brighter, and more beautiful.
-        You are that person for me Manika🥺❤️.
-        This little website is just a small way to celebrate you and the happiness you bring into my life every day.
-        Every second that passes brings us closer to your 21st birthday, and when that beautiful moment arrives,
-        a special surprise made with love will appear just for you. ❤️
+        A small website made with love, memories, and all the feelings in my heart.
+        This is our couple website, our sweet little space, and also a special birthday
+        place where my wishes for you stay year after year.
       </p>
 
-      <div id="birthdaySurprise" class="birthday-surprise hidden">
-        <h2>🎉 Happy 21st Birthday 🎂</h2>
-        <p>
-          Happy Birthday My Love. You make my world softer, brighter, and more beautiful every day. ❤️
+      <div class="card-grid">
+        <div class="card">
+          <h3>Together Since ❤️</h3>
+          <p class="small-text">March 1, 2025</p>
+
+          <div class="count-grid six-grid">
+            <div class="count-box">
+              <span id="ann-years">0</span>
+              <small>Years</small>
+            </div>
+            <div class="count-box">
+              <span id="ann-months">0</span>
+              <small>Months</small>
+            </div>
+            <div class="count-box">
+              <span id="ann-days">0</span>
+              <small>Days</small>
+            </div>
+            <div class="count-box">
+              <span id="ann-hours">0</span>
+              <small>Hours</small>
+            </div>
+            <div class="count-box">
+              <span id="ann-minutes">0</span>
+              <small>Minutes</small>
+            </div>
+            <div class="count-box">
+              <span id="ann-seconds">0</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Our Love Message 💌</h2>
+          <p>
+          Every day with you feels softer, warmer, and more beautiful. From the moment you came into my life, everything started to feel brighter. Your smile, your laugh, and even the smallest moments we share make my world feel complete.
+          </p>
+          <p>
+          This little website is a place where our memories can live forever. Our photos, our birthday wishes, our silly taps for hugs and kisses, and all the tiny moments that make our relationship special.
+          </p>
+          <p>
+          No matter how much time passes, I want us to come back here and remember how much we mean to each other. Through every birthday, every anniversary, and every memory we create together.
+          </p>
+          <p>
+          You are my happiness, my peace, and the most beautiful part of my life. I love you so much Mage Manika. ❤️
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="birthday" class="section">
+      <h2>Birthday Wish For Menuri 🎂</h2>
+      <p class="section-text">
+        Your special birthday wish unlocks only when your birthday begins at midnight.
+      </p>
+
+      <div class="single-card-wrap">
+        <div class="card birthday-counter-card">
+          <h3>Countdown to Menuri's Next Birthday 🎂</h3>
+          <p class="small-text" id="menuriBirthdayLabel">
+            Counting down to April 12 at 12:00 AM
+          </p>
+
+          <div class="count-grid four-grid">
+            <div class="count-box">
+              <span id="menuri-days">0</span>
+              <small>Days</small>
+            </div>
+            <div class="count-box">
+              <span id="menuri-hours">0</span>
+              <small>Hours</small>
+            </div>
+            <div class="count-box">
+              <span id="menuri-minutes">0</span>
+              <small>Minutes</small>
+            </div>
+            <div class="count-box">
+              <span id="menuri-seconds">0</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="birthdayLocked" class="birthday-lock card">
+        <h3>Your Birthday Wish Is Locked For Now 🔒</h3>
+        <p class="small-text">
+          A special birthday message from your Boo Boo will unlock at exactly 12:00 AM on your birthday. ❤️
         </p>
+      </div>
+
+      <div id="birthdaySurprise" class="birthday-surprise hidden">
+        <h2 id="currentWishTitle">🎉 Happy Birthday My Love 🎂</h2>
+        <p id="currentWishText">Happy Birthday My Love ❤️</p>
         <div class="button-row">
           <button id="heartBurstBtn" class="btn btn-primary">Tap for Heart Explosion 💕</button>
           <button id="loveLetterBtn" class="btn btn-secondary">Open Love Letter 💌</button>
         </div>
       </div>
+    </section>
 
-      <div class="card-grid">
-        <div class="card">
-          <h3>Countdown To 21st Birthday 🎂</h3>
-          <p class="small-text">Counting every second until her special moment.</p>
+    <section id="archive" class="section">
+      <h2>Birthday Wish Archive 🎀</h2>
+      <p class="section-text">
+        Every birthday wish stays here as a memory.
+      </p>
 
-          <div class="count-grid four-grid">
-            <div class="count-box">
-              <span id="cd-days">0</span>
-              <small>Days</small>
-            </div>
-            <div class="count-box">
-              <span id="cd-hours">0</span>
-              <small>Hours</small>
-            </div>
-            <div class="count-box">
-              <span id="cd-minutes">0</span>
-              <small>Minutes</small>
-            </div>
-            <div class="count-box">
-              <span id="cd-seconds">0</span>
-              <small>Seconds</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Live Age Counter ⏳</h3>
-          <p class="small-text">Her exact age updates every second.</p>
-
-          <div class="count-grid six-grid">
-            <div class="count-box">
-              <span id="age-years">0</span>
-              <small>Years</small>
-            </div>
-            <div class="count-box">
-              <span id="age-months">0</span>
-              <small>Months</small>
-            </div>
-            <div class="count-box">
-              <span id="age-days">0</span>
-              <small>Days</small>
-            </div>
-            <div class="count-box">
-              <span id="age-hours">0</span>
-              <small>Hours</small>
-            </div>
-            <div class="count-box">
-              <span id="age-minutes">0</span>
-              <small>Minutes</small>
-            </div>
-            <div class="count-box">
-              <span id="age-seconds">0</span>
-              <small>Seconds</small>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="birthdayArchiveList" class="archive-grid"></div>
     </section>
 
     <section id="gallery" class="section">
       <h2>Photo Memories 📸</h2>
-      <p class="section-text">Our favorite memories together.</p>
+      <p class="section-text">Our favorite moments together.</p>
 
       <div class="button-row">
         <button id="gridViewBtn" class="btn btn-primary">Grid View</button>
@@ -116,26 +159,26 @@
       </div>
 
       <div id="galleryGrid" class="gallery-grid">
-        <img src="1.jpeg" alt="Memory 1" />
-        <img src="2.jpeg" alt="Memory 2" />
-        <img src="3.jpeg" alt="Memory 3" />
-        <img src="4.jpeg" alt="Memory 4" />
-        <img src="5.jpeg" alt="Memory 5" />
-        <img src="6.jpeg" alt="Memory 6" />
-        <img src="7.jpeg" alt="Memory 7" />
-        <img src="8.jpeg" alt="Memory 8" />
+        <img src="1.jpeg" alt="Memory 1" loading="lazy" />
+        <img src="2.jpeg" alt="Memory 2" loading="lazy" />
+        <img src="3.jpeg" alt="Memory 3" loading="lazy" />
+        <img src="4.jpeg" alt="Memory 4" loading="lazy" />
+        <img src="5.jpeg" alt="Memory 5" loading="lazy" />
+        <img src="6.jpeg" alt="Memory 6" loading="lazy" />
+        <img src="7.jpeg" alt="Memory 7" loading="lazy" />
+        <img src="8.jpeg" alt="Memory 8" loading="lazy" />
       </div>
 
       <div id="slideshow" class="slideshow hidden">
-        <button id="prevSlide" class="slide-btn">❮</button>
+        <button id="prevSlide" class="slide-btn" aria-label="Previous slide">❮</button>
         <img id="slideImage" src="1.jpeg" alt="Slideshow image" />
-        <button id="nextSlide" class="slide-btn">❯</button>
+        <button id="nextSlide" class="slide-btn" aria-label="Next slide">❯</button>
       </div>
     </section>
 
     <section id="music" class="section">
       <h2>Our Song 🎶</h2>
-      <p class="section-text">The one song that reminds me of you.</p>
+      <p class="section-text">The song that reminds me of you.</p>
 
       <div class="music-card">
         <h3>Play Our Song ❤️</h3>
@@ -167,50 +210,116 @@
         </div>
 
         <div id="finalMessage" class="final-message hidden">
-          <p>
-            You solved the puzzle ❤️
-          </p>
+          <p>You solved the puzzle ❤️</p>
           <p>
             Just like these pieces came together to form one beautiful picture,
             every moment with you completes my life in the most special way.
           </p>
           <p>
-            Happy early 21st birthday Manika😘😘.
-            You are my happiness, my peace, and the most beautiful part of my life.💖
+            You are my happiness, my peace, and the most beautiful part of my life. 💖
           </p>
-          <span class="signature">Made with endless love by the one who wants to be your forever ❤️</span>
+          <span class="signature">Made with endless love by your Boo Boo ❤️</span>
         </div>
+      </div>
+    </section>
+
+    <section id="love-actions" class="section">
+      <h2>Love Actions ❤️</h2>
+      <p class="section-text">
+        Send little love taps to each other while the website is open.
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Send Love 💖</h3>
+          <div class="button-row">
+            <button class="btn love-action-btn action-btn" data-action="wantHug">Want Hug 🤗</button>
+            <button class="btn love-action-btn action-btn" data-action="wantKiss">Want to Kiss 💋</button>
+            <button class="btn love-action-btn action-btn" data-action="wantTo">Want to 🫣</button>
+            <button class="btn love-action-btn action-btn" data-action="missYou">Miss You 🥺</button>
+            <button class="btn love-action-btn action-btn" data-action="loveYou">Love You ❤️</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Live Counts ✨</h3>
+          <div class="count-grid counts-five-grid">
+            <div class="count-box">
+              <span id="count-wantHug">0</span>
+              <small>Want Hug</small>
+            </div>
+            <div class="count-box">
+              <span id="count-wantKiss">0</span>
+              <small>Want to Kiss</small>
+            </div>
+            <div class="count-box">
+              <span id="count-wantTo">0</span>
+              <small>Want to 🫣</small>
+            </div>
+            <div class="count-box">
+              <span id="count-missYou">0</span>
+              <small>Miss You</small>
+            </div>
+            <div class="count-box">
+              <span id="count-loveYou">0</span>
+              <small>Love You</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="liveNotification" class="notification hidden">
+        <strong id="notificationTitle">New Love Message 💖</strong>
+        <p id="notificationText">Someone sent you love.</p>
+      </div>
+    </section>
+
+    <section id="history" class="section">
+      <h2>Love History ❤️</h2>
+      <p class="section-text">
+        Browse your love history day by day.
+      </p>
+
+      <div class="history-nav">
+        <button id="historyPrevBtn" class="btn btn-secondary history-nav-btn">❮</button>
+        <button id="historyTodayBtn" class="btn btn-primary history-nav-btn">Today</button>
+        <div id="historyDateLabel" class="history-date-label">Today</div>
+        <button id="historyNextBtn" class="btn btn-secondary history-nav-btn">❯</button>
+      </div>
+
+      <div id="historyList" class="history-list">
+        <div class="history-empty">No love actions yet.</div>
       </div>
     </section>
   </main>
 
-  <div id="loveLetterModal" class="modal hidden">
+  <div id="loveLetterModal" class="modal hidden" aria-hidden="true">
     <div class="modal-content">
-      <button id="closeModal" class="close-btn">✕</button>
+      <button id="closeModal" class="close-btn" aria-label="Close love letter">✕</button>
       <h3>My Love Letter 💌</h3>
       <p>
         My dearest Menu,<br /><br />
-        
         You are one of the most beautiful things that ever happened in my life.
         Your smile, your voice, your care, and your love make my world feel complete.
-        This small surprise was made only for you, with all my love.
-        Happy birthday My Everything.🌍❤️
-        
-        <br /><br/>
-        මගේ මැණික ජීවිතේ දිනන්න ඕනී.හැමදාම සතුටින් ඉන්න ඕනි🥺❤️ ආදරෙයි මගේ හැමදේම.😘😘
+        This little website was made only for you and for us, with all my love.
+        Happy birthday, my everything. 🌍❤️
+        <br /><br />
+        මගේ මැණික ජීවිතේ දිනන්න ඕනී. හැමදාම සතුටින් ඉන්න ඕනි 🥺❤️ ආදරෙයි මගේ හැමදේම. 😘😘
       </p>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <div id="identityModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content identity-modal-content">
+      <h3>Who are you? 💖</h3>
+      <p class="small-text">Choose once on this phone. It will be remembered.</p>
+      <div class="button-row">
+        <button id="chooseSasiru" class="btn btn-primary">I am Sasiru</button>
+        <button id="chooseMenuri" class="btn btn-secondary">I am Menuri</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
