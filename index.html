@@ -13,8 +13,9 @@
 
   <header class="topbar">
     <div class="logo">Sasiru ❤️ Menuri</div>
+    <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
 
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" id="mobileNav" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#birthday">Birthday Wish</a>
       <a href="#archive">Birthday Archive</a>
@@ -72,25 +73,29 @@
         </div>
 
         <div class="card">
-          <h2>Our Love Message 💌</h2>
-          <p>
-          Every day with you feels softer, warmer, and more beautiful. From the moment you came into my life, everything started to feel brighter. Your smile, your laugh, and even the smallest moments we share make my world feel complete.
+          <h3>Our Love Message 💌</h3>
+          <p class="small-text">
+            Every day with you feels softer, warmer, and more beautiful. From the moment you came into my life,
+            everything started to feel brighter. Your smile, your laugh, and even the smallest moments we share
+            make my world feel complete.
           </p>
-          <p>
-          This little website is a place where our memories can live forever. Our photos, our birthday wishes, our silly taps for hugs and kisses, and all the tiny moments that make our relationship special.
+          <p class="small-text">
+            This little website is a place where our memories can live forever. Our photos, our birthday wishes,
+            our silly taps for hugs and kisses, and all the tiny moments that make our relationship special.
           </p>
-          <p>
-          No matter how much time passes, I want us to come back here and remember how much we mean to each other. Through every birthday, every anniversary, and every memory we create together.
+          <p class="small-text">
+            No matter how much time passes, I want us to come back here and remember how much we mean to each other.
+            Through every birthday, every anniversary, and every memory we create together.
           </p>
-          <p>
-          You are my happiness, my peace, and the most beautiful part of my life. I love you so much Mage Manika. ❤️
+          <p class="small-text">
+            You are my happiness, my peace, and the most beautiful part of my life. I love you so much Mage Manika. ❤️
           </p>
         </div>
       </div>
     </section>
 
     <section id="birthday" class="section">
-      <h2>Birthday Wish For Menuri 🎂</h2>
+      <h2>Birthday Wish For Menuu 🎂</h2>
       <p class="section-text">
         Your special birthday wish unlocks only when your birthday begins at midnight.
       </p>
@@ -134,7 +139,7 @@
         <h2 id="currentWishTitle">🎉 Happy Birthday My Love 🎂</h2>
         <p id="currentWishText">Happy Birthday My Love ❤️</p>
         <div class="button-row">
-          <button id="heartBurstBtn" class="btn btn-primary">Tap for Heart Explosion 💕</button>
+          <button id="heartBurstBtn" class="btn btn-secondary">Tap for Heart Explosion 💕</button>
           <button id="loveLetterBtn" class="btn btn-secondary">Open Love Letter 💌</button>
         </div>
       </div>
@@ -154,11 +159,11 @@
       <p class="section-text">Our favorite moments together.</p>
 
       <div class="button-row">
-        <button id="gridViewBtn" class="btn btn-primary">Grid View</button>
         <button id="slideViewBtn" class="btn btn-secondary">Slideshow</button>
+        <button id="gridViewBtn" class="btn btn-secondary">Grid View</button>
       </div>
 
-      <div id="galleryGrid" class="gallery-grid">
+      <div id="galleryGrid" class="gallery-grid hidden">
         <img src="1.jpeg" alt="Memory 1" loading="lazy" />
         <img src="2.jpeg" alt="Memory 2" loading="lazy" />
         <img src="3.jpeg" alt="Memory 3" loading="lazy" />
@@ -169,7 +174,7 @@
         <img src="8.jpeg" alt="Memory 8" loading="lazy" />
       </div>
 
-      <div id="slideshow" class="slideshow hidden">
+      <div id="slideshow" class="slideshow">
         <button id="prevSlide" class="slide-btn" aria-label="Previous slide">❮</button>
         <img id="slideImage" src="1.jpeg" alt="Slideshow image" />
         <button id="nextSlide" class="slide-btn" aria-label="Next slide">❯</button>
@@ -192,12 +197,12 @@
     <section id="game" class="section">
       <h2>Photo Puzzle 🧩</h2>
       <p class="section-text">
-        Arrange the 3×3 photo pieces correctly to complete the picture.
+        Arrange the 3x3 photo pieces correctly to complete the picture.
       </p>
 
       <div class="puzzle-card">
         <div class="button-row">
-          <button id="shuffleBtn" class="btn btn-primary">Shuffle Puzzle</button>
+          <button id="shuffleBtn" class="btn btn-secondary">Shuffle Puzzle</button>
           <button id="resetBtn" class="btn btn-secondary">Reset</button>
         </div>
 
@@ -239,6 +244,9 @@
             <button class="btn love-action-btn action-btn" data-action="missYou">Miss You 🥺</button>
             <button class="btn love-action-btn action-btn" data-action="loveYou">Love You ❤️</button>
           </div>
+          <p class="small-text hidden" id="firebaseStatus">
+            Firebase status: connected
+          </p>
         </div>
 
         <div class="card">
@@ -282,7 +290,7 @@
 
       <div class="history-nav">
         <button id="historyPrevBtn" class="btn btn-secondary history-nav-btn">❮</button>
-        <button id="historyTodayBtn" class="btn btn-primary history-nav-btn">Tdy</button>
+        <button id="historyTodayBtn" class="btn btn-primary history-nav-btn today-btn">Today</button>
         <div id="historyDateLabel" class="history-date-label">Today</div>
         <button id="historyNextBtn" class="btn btn-secondary history-nav-btn">❯</button>
       </div>
