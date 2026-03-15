@@ -114,6 +114,9 @@ const identityModal = document.getElementById("identityModal");
 const chooseSasiru = document.getElementById("chooseSasiru");
 const chooseMenuri = document.getElementById("chooseMenuri");
 
+const menuToggle = document.getElementById("menuToggle");
+const mobileNav = document.getElementById("mobileNav");
+
 /* =========================
    GENERAL
    ========================= */
@@ -574,7 +577,6 @@ function goToTodayHistory() {
   renderHistoryForSelectedDate();
 }
 
-
 /* =========================
    PUZZLE
    ========================= */
@@ -857,9 +859,20 @@ function setupEventListeners() {
   historyNextBtn.addEventListener("click", goToNextHistoryDate);
   historyTodayBtn.addEventListener("click", goToTodayHistory);
 
+  menuToggle.addEventListener("click", () => {
+    mobileNav.classList.toggle("show");
+  });
+
+  mobileNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("show");
+    });
+  });
+
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
       closeLoveLetter();
+      mobileNav.classList.remove("show");
     }
 
     if (!slideshow.classList.contains("hidden")) {
@@ -903,6 +916,7 @@ function init() {
   initPuzzleShuffled();
   setupEventListeners();
   setupFirebase();
+  enableSlideView();
 
   setInterval(() => {
     updateAnniversaryCounter();
