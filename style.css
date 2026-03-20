@@ -984,3 +984,33 @@ button:focus:not(:focus-visible) {
 button:active {
   transform: scale(0.97);
 }
+
+/* Touch devices: disable sticky hover color */
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover,
+  .love-action-btn:hover,
+  .slide-btn:hover,
+  .history-nav-btn:hover,
+  .close-btn:hover,
+  .nav a:hover,
+  .menu-toggle:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .btn-secondary:hover,
+  .love-action-btn:hover,
+  .slide-btn:hover,
+  .history-nav-btn:hover,
+  .close-btn:hover,
+  .nav a:hover,
+  .menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.14) !important;
+    color: white !important;
+  }
+
+  .btn-primary:hover {
+    background: var(--pink-light) !important;
+    color: var(--pink-dark) !important;
+  }
+}
