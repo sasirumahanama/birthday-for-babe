@@ -889,23 +889,28 @@ function setupEventListeners() {
     }
   });
 
-  actionButtons.forEach((btn) => {
-    btn.addEventListener("click", async () => {
-      try {
-        await sendLoveAction(btn.dataset.action);
-        btn.blur();
-      } catch (error) {
-        console.error(error);
-        alert("Something went wrong while sending the love action.");
-      }
-    });
+actionButtons.forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    try {
+      await sendLoveAction(btn.dataset.action);
+      setTimeout(() => btn.blur(), 50);
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong while sending the love action.");
+    }
+  });
+});
+
+  // FORCE REMOVE FOCUS ON MOBILE (FINAL FIX)
+  document.querySelectorAll("button").forEach((btn) => {
+     btn.addEventListener("touchend", () => {
+        setTimeout(() => btn.blur(), 50);
   });
 
-  document.querySelectorAll("button").forEach((btn) => {
-    btn.addEventListener("click", () => {
+     btn.addEventListener("click", () => {
       setTimeout(() => btn.blur(), 50);
     });
-  });
+  });  
 }
 
 /* =========================
