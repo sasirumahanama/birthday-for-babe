@@ -383,7 +383,7 @@ function renderBirthdayArchive() {
             })} midnight
           </div>
           <p class="small-text">
-            A special birthday message from Boo Boo will unlock on this day ❤️
+            A special birthday message from her Boo Boo will unlock on this day ❤️
           </p>
         `;
       }
@@ -893,10 +893,17 @@ function setupEventListeners() {
     btn.addEventListener("click", async () => {
       try {
         await sendLoveAction(btn.dataset.action);
+        btn.blur();
       } catch (error) {
         console.error(error);
         alert("Something went wrong while sending the love action.");
       }
+    });
+  });
+
+  document.querySelectorAll("button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setTimeout(() => btn.blur(), 50);
     });
   });
 }
