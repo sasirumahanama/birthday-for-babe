@@ -56,69 +56,92 @@ header,
   z-index: 1;
 }
 
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 16px;
-  background: rgba(45, 12, 47, 0.75);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.topbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:14px 16px;
+
+  background:rgba(45,12,47,0.75);
+  backdrop-filter:blur(10px);
+
+  border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.1rem;
+/* Logo */
+
+.logo{
+  font-weight:700;
+  font-size:1.1rem;
 }
 
-.menu-toggle {
-  position: absolute;
-  right: 16px;
-  width: 34px;
-  height: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: none;
-  background: none;
-  cursor: pointer;
+/* Hamburger button */
+
+.menu-toggle{
+  position:absolute;
+  right:16px;
+
+  width:34px;
+  height:28px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  border:none;
+  background:none;
+  cursor:pointer;
 }
 
-.menu-toggle span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: white;
-  border-radius: 4px;
+.menu-toggle span{
+  display:block;
+  height:3px;
+  width:100%;
+
+  background:white;
+  border-radius:4px;
 }
 
-.nav {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  padding: 16px;
-  background: rgba(45, 12, 47, 0.95);
+/* Navigation */
+
+.nav{
+  position:absolute;
+  top:60px;
+  left:0;
+
+  width:100%;
+
+  display:none;
+  flex-direction:column;
+  gap:10px;
+
+  padding:16px;
+
+  background:rgba(45,12,47,0.95);
 }
 
-.nav.show {
-  display: flex;
+.nav.show{
+  display:flex;
 }
 
-.nav a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  font-weight: 600;
+.nav a{
+  text-decoration:none;
+  color:white;
+
+  text-align:center;
+
+  padding:10px 14px;
+
+  border-radius:999px;
+
+  background:rgba(255,255,255,0.12);
+
+  font-weight:600;
 }
 
 .nav a:hover,
@@ -675,6 +698,96 @@ audio {
   }
 }
 
+@media (max-width: 768px ){
+ .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: rgba(45, 12, 47, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.menu-toggle {
+  display: none;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.menu-toggle span {
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  height: 2.5px;
+  background: #ffffff;
+  border-radius: 999px;
+  transition: 0.25s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 12px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 19px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 26px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  top: 19px;
+  transform: rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  top: 19px;
+  transform: rotate(-45deg);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+}
+
 @media (max-width: 768px) {
   .topbar {
     padding: 12px 14px;
@@ -831,35 +944,5 @@ audio {
     min-width: 120px;
     padding: 10px 10px;
     font-size: 0.9rem;
-  }
-}
-
-/* MOBILE BUTTON FIX */
-
-button {
-  -webkit-tap-highlight-color: transparent;
-}
-
-button:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-button:focus:not(:focus-visible) {
-  outline: none;
-  box-shadow: none;
-}
-
-button:active {
-  transform: scale(0.97);
-}
-
-/* Only fix sticky hover for love action buttons on touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .love-action-btn:hover {
-    background: rgba(255, 255, 255, 0.14) !important;
-    color: white !important;
-    transform: none !important;
-    box-shadow: none !important;
   }
 }
