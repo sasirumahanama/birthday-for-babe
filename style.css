@@ -891,6 +891,20 @@ audio {
     padding-right: 12px;
   }
 
+  @media (hover: none) and (pointer: coarse) {
+  .btn:hover,
+  .love-action-btn:hover,
+  .slide-btn:hover,
+  .history-nav-btn:hover,
+  .close-btn:hover,
+  .nav a:hover {
+    background: inherit;
+    color: inherit;
+    transform: none;
+    box-shadow: none;
+  }
+}
+
   .card,
   .music-card,
   .puzzle-card,
