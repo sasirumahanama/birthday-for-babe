@@ -946,3 +946,27 @@ audio {
     font-size: 0.9rem;
   }
 }
+
+/* ===== MOBILE BUTTON FIX ===== */
+
+/* Remove blue tap highlight on iPhone */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove stuck focus style */
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Only show focus for keyboard users */
+button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Optional: smooth press effect */
+button:active {
+  transform: scale(0.97);
+}
