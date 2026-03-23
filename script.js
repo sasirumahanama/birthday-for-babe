@@ -99,6 +99,7 @@ const countWantKiss = document.getElementById("count-wantKiss");
 const countWantTo = document.getElementById("count-wantTo");
 const countMissYou = document.getElementById("count-missYou");
 const countLoveYou = document.getElementById("count-loveYou");
+const countKillYou = document.getElementById("count-killYou");
 
 const liveNotification = document.getElementById("liveNotification");
 const notificationTitle = document.getElementById("notificationTitle");
@@ -707,7 +708,8 @@ function getActionLabel(action) {
     wantKiss: "wants to kiss 💋",
     wantTo: "wants to 🫣",
     missYou: "misses you 🥺",
-    loveYou: "loves you ❤️"
+    loveYou: "loves you ❤️",
+    killYou: "wants to kill you 🤬🔪"
   };
   return map[action] || action;
 }
@@ -718,7 +720,8 @@ function getHistoryLabel(action) {
     wantKiss: "wants to kiss 💋",
     wantTo: "wants to 🫣",
     missYou: "miss you 🥺",
-    loveYou: "love you ❤️"
+    loveYou: "love you ❤️",
+    killYou: "wants to kill you 🤬🔪"
   };
   return map[action] || action;
 }
@@ -739,6 +742,7 @@ function renderCounts(counts) {
   setText(countWantTo, counts.wantTo || 0);
   setText(countMissYou, counts.missYou || 0);
   setText(countLoveYou, counts.loveYou || 0);
+  setText(countKillYou, counts.killYou || 0);
 }
 
 async function sendLoveAction(action) {
