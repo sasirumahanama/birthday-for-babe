@@ -384,7 +384,7 @@ function renderBirthdayArchive() {
             })} midnight
           </div>
           <p class="small-text">
-            A special birthday message from her Boo Boo will unlock on this day ❤️
+            A special birthday message from Boo Boo will unlock on this day ❤️
           </p>
         `;
       }
