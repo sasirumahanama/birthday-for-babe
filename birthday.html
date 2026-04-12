@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Birthday wishes page for Sasiru and Menuri." />
+  <meta name="theme-color" content="#10192b" />
+  <title>Sasiru + Menuri | Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="topic-page">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="Go to home">
+      <span class="logo-mark">S+M</span>
+      <span class="logo-text">Sasiru + Menuri</span>
+    </a>
+
+    <button
+      id="menuToggle"
+      class="menu-toggle"
+      type="button"
+      aria-controls="mobileNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="mobileNav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Memories</a>
+      <a href="birthday.html" aria-current="page">Birthday</a>
+      <a href="archive.html">Archive</a>
+      <a href="music.html">Song</a>
+      <a href="game.html">Puzzle</a>
+      <a href="love-actions.html">Love</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Birthday chapter</p>
+        <h2>A wish that waits until midnight</h2>
+      </div>
+
+      <div class="single-card-wrap">
+        <div class="card birthday-counter-card">
+          <p class="section-kicker">Countdown</p>
+          <h3>Menuri&apos;s Next Birthday</h3>
+          <p class="small-text" id="menuriBirthdayLabel">
+            Counting down to April 12 at 12:00 AM
+          </p>
+
+          <div class="count-grid four-grid">
+            <div class="count-box">
+              <span id="menuri-days">0</span>
+              <small>Days</small>
+            </div>
+            <div class="count-box">
+              <span id="menuri-hours">0</span>
+              <small>Hours</small>
+            </div>
+            <div class="count-box">
+              <span id="menuri-minutes">0</span>
+              <small>Minutes</small>
+            </div>
+            <div class="count-box">
+              <span id="menuri-seconds">0</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="birthdayLocked" class="birthday-lock card">
+        <h3>Your Birthday Wish Is Locked For Now</h3>
+        <p class="small-text">
+          A special birthday message from Boo Boo will unlock at exactly 12:00
+          AM on your birthday.
+        </p>
+      </div>
+
+      <div id="birthdaySurprise" class="birthday-surprise hidden">
+        <p class="section-kicker">Unlocked</p>
+        <h2 id="currentWishTitle">Happy Birthday My Love</h2>
+        <p id="currentWishText" class="section-text">Happy Birthday My Love</p>
+        <div class="button-row">
+          <button id="heartBurstBtn" class="btn btn-secondary" type="button">
+            Heart Burst
+          </button>
+          <button id="loveLetterBtn" class="btn btn-secondary" type="button">
+            Open Love Letter
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Every birthday becomes part of the story.
+  </footer>
+
+  <div id="loveLetterModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn" type="button" aria-label="Close love letter">
+        &#10005;
+      </button>
+      <p class="section-kicker">Love Letter</p>
+      <h3>My Love Letter</h3>
+      <p>
+        My dearest Menu,
+        <br /><br />
+        You are one of the most beautiful things that ever happened in my life.
+        Your smile, your voice, your care, and your love make my world feel
+        complete. This little website was made only for you and for us, with all
+        my love.
+        <br /><br />
+        Happy birthday, my everything. I want this place to keep our sweetest
+        memories safe, year after year, so we can always come back and feel how
+        special we are to each other.
+        <br /><br />
+        I love you so much.
+      </p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

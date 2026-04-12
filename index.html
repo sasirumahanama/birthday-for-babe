@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A private love website for Sasiru and Menuri with memories, birthday wishes, and sweet little surprises."
+  />
+  <meta name="theme-color" content="#10192b" />
+  <title>Sasiru + Menuri | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-home">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="Go to home">
+      <span class="logo-mark">S+M</span>
+      <span class="logo-text">Sasiru + Menuri</span>
+    </a>
+
+    <button
+      id="menuToggle"
+      class="menu-toggle"
+      type="button"
+      aria-controls="mobileNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="mobileNav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="gallery.html">Memories</a>
+      <a href="birthday.html">Birthday</a>
+      <a href="archive.html">Archive</a>
+      <a href="music.html">Song</a>
+      <a href="game.html">Puzzle</a>
+      <a href="love-actions.html">Love</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="section hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Private love journal</p>
+          <h1>
+            Every memory has its own little space,
+            <span>waiting for you to open it.</span>
+          </h1>
+
+          <p class="hero-text familiar-quote">
+            Our moments, our love, our story...
+            <br />
+            always just one touch away.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="gallery.html">Open Memories</a>
+            <a class="btn btn-secondary" href="birthday.html">Birthday Wish</a>
+            <a class="btn btn-secondary" href="love-actions.html">Love Actions</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-collage">
+            <figure class="photo-card photo-main">
+              <picture>
+                <source media="(max-width: 700px)" srcset="1.jpeg" />
+                <img
+                  src="7.jpeg"
+                  alt="Sasiru and Menuri smiling together under a bright blue sky"
+                  loading="eager"
+                />
+              </picture>
+            </figure>
+
+            <figure class="photo-card photo-small photo-top">
+              <img
+                src="2.jpeg"
+                alt="A black and white close portrait of Sasiru and Menuri"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="photo-card photo-small photo-bottom">
+              <img
+                src="5.jpeg"
+                alt="Sasiru and Menuri smiling during an indoor selfie"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made for the two of you, and for every year still coming.
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
